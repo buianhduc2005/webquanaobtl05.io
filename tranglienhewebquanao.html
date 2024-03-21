@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Liên hệ</title>
+        <style>
+            body {
+                font-size: 1.5em;
+            }
+            ul li {
+                display: inline;
+                padding: 10px;
+                border-bottom: 4px;
+            }
+            ul li a {
+                text-decoration: none;
+                color: white;     
+            }
+            ul li:hover {
+                border-bottom-style: solid;
+                border-bottom-width: 4px;
+                border-bottom-color: rgb(214, 253, 14);
+            }
+            h2 {
+                background-color: green;
+            }
+            p{
+                color: rgb(111, 111, 86);
+            }
+            img {
+
+                width: 50%;
+                float: right;
+            }
+            * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+main {
+ width: 40rem;
+ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+ margin: 0 auto;
+ height: 45rem;
+ border-radius: 2rem;
+ padding: 2rem;
+}
+
+h1 {
+ text-align: center;
+ font-size: 3rem;
+ padding: 1rem 2rem;
+}
+
+form {
+ margin: 3rem 0;
+ display: flex;
+ flex-direction: column;
+ row-gap: 2rem;
+}
+
+.input__container {
+ display: flex;
+ flex-direction: column;
+ row-gap: 0.5rem;
+}
+
+.input__container label { font-size: 1.6rem; }
+
+.input__container input,
+textarea {
+ padding: 1rem 2rem;
+ border-radius: 10px;
+ border: 1px solid #13c828;
+ resize: none;
+}
+
+button {
+ align-self: flex-start;
+ padding: 1rem 2rem;
+ border-radius: 5px;
+ border: none;
+ color: white;
+ cursor: pointer;
+ background-color: black;
+}
+.doimau:hover {
+    background-color: yellow;
+    color: red;
+}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <h2>
+                <li><a href="trangchuwebquanao.html">Trang chủ</a>
+                <li><a href="gioithieuwebquanao.html">Giới thiệu</a>
+                <li><a href="sanphamwebquanao.html">Sản phẩm</a>
+                <li><a href="trangtintucwebquanao.html">Tin tức</a>
+                <li><a href="tranglienhewebquanao.html">Liên hệ</a>
+            </h2>
+        </ul>
+        <br>
+        <h3>
+            <a href="trangchuwebquanao.html">Trang chủ</a>
+            / Liên hệ
+        </h3>
+        <img src="https://trothinhankhang.com/wp-content/uploads/2021/02/cam-on-quy-khach-da-tin-chon-Tro-thinh-An-khang.png"/><br>
+        <h4>Liên hệ với chúng tôi</h4><br>
+        <p> Bạn hãy điền nội dung tin nhắn vào form dưới đây và gửi chúng tôi. Chúng tôi sẽ trả lời bạn sau khi nhận được</p>
+        <br>
+        <from>
+            <div class="input__container">
+                <input type="text" id="Ho Ten" name="Ho Ten" placeholder="Họ Tên"/>
+              </div>
+              <br>
+              <div class="input__container">
+                <input type="email" id="email" name="email" placeholder="Email"/>
+              </div>
+              <br>
+              <div class="input__container">
+                <textarea id="Noidung" name="Noidung" rows="4" placeholder="Nội dung"></textarea>
+              </div>
+              <br>
+              <button class="doimau">Gửi đi</button>
+        </from>
+    </body>
+</html>
